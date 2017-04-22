@@ -1,0 +1,23 @@
+By Spring::::
+
+We can pass all the dependency of the classes by xml file using ioc container
+
+DAO CLASSES HAS DEPENDENCY OF :: JDBC DRIVER, DB URL, USERNAME, PASSWORD, CONNECTION POOL  AND ALL
+
+BUSINESS :: DAO, TRANSECTION, SECURITY, MAIL, ETC
+
+
+
+ spring.xml              IOC CONTAINER                DAO CLASSES        
+ 
+ JDBC DRIVER,                                      setter method ////  parameterized constructor
+ DB URL,                                           should have in the dao classes to receive parameter from the IOC container
+ USERNAME,            ------------------>>>
+ PASSWORD
+ 
+ 
+ by default container create the object using default constructor
+ 
+ to call the setter method we uses the property tag. name, value
+ to call the constructor we uses the constrator-arg, value, index, type, for primitive or ref for secondary data type
+ 

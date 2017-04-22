@@ -1,0 +1,28 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="e1" class="beans.Test">
+		<property name="fruits">
+			<list>
+				<value>Apple1</value>
+				<value>Apple2</value>
+				<value>Apple3</value>
+			</list>
+		</property>
+		<property name="cricketrs">
+			<set>
+				<value>sachin</value>
+				<value>rahul</value>
+				<value>dhawan</value>
+			</set>
+		</property>
+		<property name="cc">
+			<map>
+				<entry key="key1" value="value1"/>
+				<entry key="key2" value="value2"/>
+				<entry key="key3" value="value3"/>
+			</map>
+		</property>
+	</bean>
+</beans>
