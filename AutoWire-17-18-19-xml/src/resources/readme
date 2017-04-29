@@ -1,0 +1,29 @@
+Autowire:
+   		Automatic dependency injection
+   		Bytyep, Byname, constructor, autodetect, no(default)
+   		
+   		reducing number of xml tag
+   		
+   		Applicable for secondary type
+   		
+   		Bytype/Byname/autodetect ===> used for setter  ===>declare with setter method
+   		
+   		autowire-condidate = false to remove ambiguity on bytype
+   		
+   		byname: search by type and name(id in xml should be same as variable name in class) no ambiguity
+   		
+   		by-constructor: internally it will use by type (autowire-condidate = false)
+   		Auto-detect: both - constructor and setter 
+   		                  - if p cons - go for p cons
+   		                  - if z cons - go for setter m
+   		                  
+   		                  
+   		bytype === best way
+   		
+
+   		===============================================================
+   		By annotation 
+   		
+   		@autowire  >>> default bytype 
+   		
+   		@qualifire("id")  >>>  bean id to remove ambiguity

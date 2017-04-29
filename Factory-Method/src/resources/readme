@@ -1,0 +1,26 @@
+Singleton Class
+
+Jre is having a class ResourceBundle as a singleton class
+
+how to create a object : ResourceBundle rb = ResourceBundle.getBundle("baseName");
+                         Calander c = Calander.getInstance();
+                         
+factory-method = 'methodname' to create object of a class using factory method.
+
+Factory : returns other class objects
+Singleton: returns own object
+
+factory classes : logger factory, validater factory.. session fectory
+
+use of factory classes:
+
+	Hide instention
+	by returning the instane of interface..make clients independs..
+	
+	e.g. :: Driver.getConnection(;;;) it returns the connection object it deos metter which is
+	the data base--->>oracle,mysql.psql..etc
+	
+	Here connection is a interface
+	
+	
+	In this example bean returns always same calass object

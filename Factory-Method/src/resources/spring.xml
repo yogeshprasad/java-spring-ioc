@@ -1,0 +1,7 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+		
+<beans>
+	 <bean id='car' class="beans.Car" factory-method="getInstance"/>
+	 <bean id='cal' class = "java.util.Calendar" factory-method="getInstance"/>
+</beans>

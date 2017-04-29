@@ -1,0 +1,21 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<!-- Auto dependency injection @Autowire -->
+
+	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+	
+
+	<bean id="eng1" class="beans.Engine">
+		<property name="modelyear" value="2017"/>
+	</bean>
+	
+	<bean id="eng2" class="beans.Engine">
+		<property name="modelyear" value="2018"/>
+	</bean>
+	
+	<bean id="car" class="beans.Car"/>
+
+</beans>

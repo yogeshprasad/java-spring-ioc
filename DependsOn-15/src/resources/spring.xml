@@ -1,0 +1,27 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+ 
+   <!-- Depends on: mutual dependency is not possible
+   		A depends on B depends on C
+   		
+   		Advance controller will create the object of all the classes defined in bean
+   		while loading the bean..
+   		
+   		without depends on if we will load the bean all object will get created on the same 
+   		order in which they are declared.
+   		
+   		Depends on :
+   		
+   		first dependent object will get created at last
+   		
+    -->
+   
+	<bean id="a" class="beans.TestA" depends-on="c"/>
+
+	<bean id="b" class="beans.TestB"/>
+
+	<bean id="c" class="beans.TestC"/>
+
+</beans>

@@ -1,0 +1,16 @@
+Stero type annotation
+
+Controller --->>> for controller
+Repository --->>> for dao
+Service --->> for business
+component ---> non mvc classes >> utill class 
+
+   		
+<context:annotation-config> activates
+
+(@Autowired)AutowiredAnnotationBeanPostProcessor and (@Required)RequiredAnnotationBeanPostProcessor
+@PostConstruct @Predestroy
+   		
+@component will b used th create the object of the class that is having the only secondary type object...
+
+we have to manually create the object by using property tag if class is having primary tag.

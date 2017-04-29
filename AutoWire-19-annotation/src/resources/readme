@@ -1,0 +1,10 @@
+Autowire: By annotation 
+   		
+   		@autowire  >>> default bytype 
+   		
+   		@qualifire("id")  >>>  bean id to remove ambiguity
+   		
+   		@autowire: constructor/ setter is not needed
+   		
+   		
+   		
