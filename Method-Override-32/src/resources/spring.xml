@@ -1,0 +1,15 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+		
+		
+<beans>
+	<!-- Lookup method for interface -->
+	
+	 <bean id="bank" class="beans.Bank">
+	 	<replaced-method name="calInt" replacer="nci"/>
+	 </bean>
+	 
+	 <bean id="nci" class="beans.NewCalInt"/>
+	 
+	 
+</beans>

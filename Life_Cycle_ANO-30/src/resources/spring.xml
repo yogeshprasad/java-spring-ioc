@@ -1,0 +1,8 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+		
+<beans default-init-method="init" default-destroy-method="destroy">
+	 <bean id="conncet" class="beans.DbConnect"/>
+	  <bean id="conncet2" class="beans.DbConnect2"/>
+	   <bean id="conncet3" class="beans.DbConnect3"/>
+</beans>
